@@ -17,9 +17,9 @@ const contactInfo = [
   {
     icon: <Mail className="text-xl" />,
     title: "Email",
-    description: "yash10nikam@gmaila.com",
+    description: "yash10nikam@gmail.com",
     action: "Send me an email",
-    actionLink: "mailto:yash10nikam@gmaila.com"
+    actionLink: "mailto:yash10nikam@gmail.com"
   },
   {
     icon: <Phone className="text-xl" />,

@@ -86,7 +86,7 @@ export default function Footer() {
             <p>&copy; {new Date().getFullYear()} Yash Nikam. All rights reserved.</p>
             <div className="mt-4 md:mt-0 flex space-x-6">
               <span className="text-gray-500">Pune, Maharashtra</span>
-              <span className="text-gray-500">yash10nikam@gmaila.com</span>
+              <span className="text-gray-500">yash10nikam@gmail.com</span>
             </div>
           </div>
         </div>
