@@ -222,7 +222,7 @@ export default function ProjectSection() {
                     >
                       <a href={project.codeLink} target="_blank" rel="noopener noreferrer">
                         <Github className="mr-2 h-4 w-4" />
-                        View Code
+                        GitHub Repo
                       </a>
                     </Button>
                   </motion.div>
@@ -282,7 +282,18 @@ export default function ProjectSection() {
                         >
                           <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
                             <ExternalLink className="mr-2 h-3 w-3" />
-                            View Project
+                            Live Demo
+                          </a>
+                        </Button>
+                        <Button 
+                          asChild 
+                          size="sm" 
+                          variant="outline"
+                          className="border-white text-white hover:bg-white/10"
+                        >
+                          <a href={project.codeLink} target="_blank" rel="noopener noreferrer">
+                            <Github className="mr-2 h-3 w-3" />
+                            GitHub Repo
                           </a>
                         </Button>
                       </motion.div>
