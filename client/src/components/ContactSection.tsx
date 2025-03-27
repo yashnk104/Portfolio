@@ -17,23 +17,23 @@ const contactInfo = [
   {
     icon: <Mail className="text-xl" />,
     title: "Email",
-    description: "john.doe@example.com",
+    description: "yash10nikam@gmaila.com",
     action: "Send me an email",
-    actionLink: "mailto:john.doe@example.com"
+    actionLink: "mailto:yash10nikam@gmaila.com"
   },
   {
     icon: <Phone className="text-xl" />,
     title: "Phone",
-    description: "+1 (555) 123-4567",
+    description: "8080727434",
     action: "Call me",
-    actionLink: "tel:+15551234567"
+    actionLink: "tel:8080727434"
   },
   {
     icon: <MapPin className="text-xl" />,
     title: "Location",
-    description: "San Francisco, CA\nAvailable for remote work",
+    description: "Pune, Maharashtra\nAvailable for remote work",
     action: "View on map",
-    actionLink: "https://maps.google.com"
+    actionLink: "https://maps.google.com/?q=Pune,Maharashtra"
   }
 ];
 
@@ -41,27 +41,27 @@ const socialLinks = [
   { 
     icon: <FaGithub className="text-2xl" />, 
     name: "GitHub", 
-    url: "https://github.com/johndoe" 
+    url: "https://github.com/yash-nikam" 
   },
   { 
     icon: <FaLinkedin className="text-2xl" />, 
     name: "LinkedIn", 
-    url: "https://linkedin.com/in/johndoe" 
+    url: "https://linkedin.com/in/yash-nikam" 
   },
   { 
     icon: <FaTwitter className="text-2xl" />, 
     name: "Twitter", 
-    url: "https://twitter.com/johndoe" 
+    url: "https://twitter.com/yash_nikam" 
   },
   { 
     icon: <FaDribbble className="text-2xl" />, 
     name: "Dribbble", 
-    url: "https://dribbble.com/johndoe" 
+    url: "https://dribbble.com/yash-nikam" 
   },
   { 
     icon: <FaMedium className="text-2xl" />, 
     name: "Medium", 
-    url: "https://medium.com/@johndoe" 
+    url: "https://medium.com/@yash10nikam" 
   }
 ];
 
@@ -183,17 +183,17 @@ export default function ContactSection() {
                   <span className="font-medium">Current Status</span>
                 </div>
                 <p className="text-gray-600 mb-4">
-                  Currently accepting new projects for Q2 2023. Book a discovery call to get started.
+                  Currently accepting new projects and collaboration opportunities. Book a discovery call to get started.
                 </p>
                 <Button asChild size="sm" variant="outline">
-                  <a href="https://calendly.com/johndoe/discovery" target="_blank" rel="noopener noreferrer">
+                  <a href="https://calendly.com/yash-nikam/discovery" target="_blank" rel="noopener noreferrer">
                     <Calendar className="mr-2 h-4 w-4" />
                     Book a Call
                   </a>
                 </Button>
                 <div className="mt-4 pt-4 border-t border-gray-100">
                   <Button asChild size="sm" variant="ghost" className="w-full">
-                    <a href="/resume.pdf" download>
+                    <a href="/Yash_Nikam_Resume.pdf" download>
                       <Download className="mr-2 h-4 w-4" />
                       Download Resume
                     </a>

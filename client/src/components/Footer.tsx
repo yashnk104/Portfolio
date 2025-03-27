@@ -17,19 +17,19 @@ export default function Footer() {
               Full-stack Developer & UI/UX Designer crafting beautiful, functional digital experiences that blend stunning design with powerful functionality.
             </p>
             <div className="mt-6 flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://twitter.com/yash_nikam" className="text-gray-400 hover:text-white transition-colors">
                 <span className="sr-only">Twitter</span>
                 <FaTwitter className="text-lg" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://linkedin.com/in/yash-nikam" className="text-gray-400 hover:text-white transition-colors">
                 <span className="sr-only">LinkedIn</span>
                 <FaLinkedin className="text-lg" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://github.com/yash-nikam" className="text-gray-400 hover:text-white transition-colors">
                 <span className="sr-only">GitHub</span>
                 <FaGithub className="text-lg" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://dribbble.com/yash-nikam" className="text-gray-400 hover:text-white transition-colors">
                 <span className="sr-only">Dribbble</span>
                 <FaDribbble className="text-lg" />
               </a>
@@ -85,8 +85,8 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p>&copy; {new Date().getFullYear()} Yash Nikam. All rights reserved.</p>
             <div className="mt-4 md:mt-0 flex space-x-6">
-              <span className="text-gray-500">Mumbai, India</span>
-              <span className="text-gray-500">yash.nikam@example.com</span>
+              <span className="text-gray-500">Pune, Maharashtra</span>
+              <span className="text-gray-500">yash10nikam@gmaila.com</span>
             </div>
           </div>
         </div>
