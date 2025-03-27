@@ -1,43 +1,49 @@
 import { motion } from "framer-motion";
 import { 
-  Layers, 
-  Zap, 
-  Shield, 
-  Users, 
-  BarChart, 
-  Settings 
+  Code, 
+  Palette, 
+  Database, 
+  GitBranch, 
+  Smartphone, 
+  Layers 
 } from "lucide-react";
 
-const features = [
+const technologies = [
+  {
+    icon: <Code className="text-white h-6 w-6" />,
+    title: "Frontend Development",
+    description: "Expert in React, Vue, and Angular with a focus on building responsive, accessible, and performant user interfaces.",
+    items: ["React", "TypeScript", "Next.js", "TailwindCSS"]
+  },
+  {
+    icon: <Database className="text-white h-6 w-6" />,
+    title: "Backend Development",
+    description: "Building scalable APIs and server-side applications using modern frameworks and architectural patterns.",
+    items: ["Node.js", "Express", "PostgreSQL", "MongoDB"]
+  },
+  {
+    icon: <Palette className="text-white h-6 w-6" />,
+    title: "UI/UX Design",
+    description: "Creating intuitive and beautiful interfaces that provide exceptional user experiences across all devices.",
+    items: ["Figma", "Adobe XD", "Wireframing", "Prototyping"]
+  },
+  {
+    icon: <GitBranch className="text-white h-6 w-6" />,
+    title: "DevOps & Deployment",
+    description: "Setting up CI/CD pipelines and cloud infrastructure to ensure smooth deployment and operation.",
+    items: ["Docker", "AWS", "GitHub Actions", "Netlify"]
+  },
+  {
+    icon: <Smartphone className="text-white h-6 w-6" />,
+    title: "Mobile Development",
+    description: "Building cross-platform mobile applications with native-like performance and seamless user experiences.",
+    items: ["React Native", "Flutter", "iOS", "Android"]
+  },
   {
     icon: <Layers className="text-white h-6 w-6" />,
-    title: "Seamless Integration",
-    description: "Connects with your existing tools and workflows for a unified experience without disruption."
-  },
-  {
-    icon: <Zap className="text-white h-6 w-6" />,
-    title: "Lightning Fast Performance",
-    description: "Engineered for speed with real-time updates and responsive design that feels instant."
-  },
-  {
-    icon: <Shield className="text-white h-6 w-6" />,
-    title: "Enterprise-Grade Security",
-    description: "Your data is protected with end-to-end encryption and compliance with international standards."
-  },
-  {
-    icon: <Users className="text-white h-6 w-6" />,
-    title: "Team Collaboration",
-    description: "Real-time collaboration tools that bring your team together no matter where they are located."
-  },
-  {
-    icon: <BarChart className="text-white h-6 w-6" />,
-    title: "Advanced Analytics",
-    description: "Gain valuable insights with comprehensive reporting and visualizations of your data."
-  },
-  {
-    icon: <Settings className="text-white h-6 w-6" />,
-    title: "Customizable Workflow",
-    description: "Adapt the platform to your unique processes with flexible, customizable workflows."
+    title: "API Integration",
+    description: "Connecting applications with third-party services and APIs to extend functionality and capabilities.",
+    items: ["REST", "GraphQL", "OAuth", "Webhooks"]
   }
 ];
 
@@ -71,9 +77,9 @@ export default function FeatureSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Why You'll Love Our Product</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Technologies & Expertise</h2>
           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-            Designed with your needs in mind, our platform offers powerful features to supercharge your productivity.
+            I work with a variety of modern technologies to create robust and scalable applications.
           </p>
         </motion.div>
         
@@ -84,17 +90,27 @@ export default function FeatureSection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
-          {features.map((feature, index) => (
+          {technologies.map((tech, index) => (
             <motion.div 
               key={index}
               className="bg-gray-50 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300"
               variants={itemVariants}
             >
               <div className="h-12 w-12 rounded-md bg-primary text-white flex items-center justify-center mb-5">
-                {feature.icon}
+                {tech.icon}
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{tech.title}</h3>
+              <p className="text-gray-600 mb-4">{tech.description}</p>
+              <div className="flex flex-wrap gap-2">
+                {tech.items.map((item, i) => (
+                  <span 
+                    key={i} 
+                    className="px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
             </motion.div>
           ))}
         </motion.div>

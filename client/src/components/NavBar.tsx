@@ -34,21 +34,20 @@ export default function NavBar() {
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold">P</span>
+                <span className="text-primary-foreground font-bold">JD</span>
               </div>
-              <span className="text-xl font-bold text-gray-900">ProductName</span>
+              <span className="text-xl font-bold text-gray-900">John Doe</span>
             </Link>
           </div>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8 items-center">
-            <a href="#features" className="text-gray-600 hover:text-primary transition-colors py-2">Features</a>
             <a href="#projects" className="text-gray-600 hover:text-primary transition-colors py-2">Projects</a>
             <a href="#skills" className="text-gray-600 hover:text-primary transition-colors py-2">Skills</a>
             <a href="#about" className="text-gray-600 hover:text-primary transition-colors py-2">About</a>
             <a href="#contact" className="text-gray-600 hover:text-primary transition-colors py-2">Contact</a>
             <Button asChild>
-              <a href="#waitlist">Join Waitlist</a>
+              <a href="#contact">Hire Me</a>
             </Button>
           </nav>
           
@@ -73,13 +72,6 @@ export default function NavBar() {
       {/* Mobile Navigation */}
       <div className={`md:hidden bg-white border-b border-gray-200 ${mobileMenuOpen ? 'block' : 'hidden'}`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a 
-            href="#features" 
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-            onClick={closeMobileMenu}
-          >
-            Features
-          </a>
           <a 
             href="#projects" 
             className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
@@ -109,11 +101,11 @@ export default function NavBar() {
             Contact
           </a>
           <a 
-            href="#waitlist" 
+            href="#contact" 
             className="block px-3 py-2 rounded-md text-base font-medium text-white bg-primary hover:bg-primary/90 m-2"
             onClick={closeMobileMenu}
           >
-            Join Waitlist
+            Hire Me
           </a>
         </div>
       </div>

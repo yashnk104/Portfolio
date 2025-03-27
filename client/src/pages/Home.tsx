@@ -5,7 +5,6 @@ import FeatureSection from "@/components/FeatureSection";
 import ProjectSection from "@/components/ProjectSection";
 import SkillSection from "@/components/SkillSection";
 import AboutSection from "@/components/AboutSection";
-import WaitlistSection from "@/components/WaitlistSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -69,7 +68,6 @@ export default function Home() {
         <ProjectSection />
         <SkillSection />
         <AboutSection />
-        <WaitlistSection />
         <ContactSection />
       </main>
       <Footer />
