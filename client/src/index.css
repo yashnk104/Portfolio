@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --bluelock-blue: #0077FF;
+    --bluelock-dark-blue: #00264D;
+    --bluelock-neon: #00EEFF;
+    --bluelock-dark: #000D1A;
+    --bluelock-gray: #2A3A4A;
+  }
+
   * {
     @apply border-border;
   }
@@ -10,34 +20,69 @@
   body {
     @apply font-sans antialiased bg-background text-foreground;
     letter-spacing: -0.01em;
+    font-family: 'Rajdhani', sans-serif;
+    background-color: var(--bluelock-dark);
+    color: white;
+    background-image: linear-gradient(to bottom right, var(--bluelock-dark), var(--bluelock-dark-blue));
+    background-attachment: fixed;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display font-medium tracking-tight;
+    font-family: 'Orbitron', sans-serif;
+    @apply font-medium tracking-tight;
   }
   
-  /* Additional typography styling for a more aesthetic look */
+  /* Blue Lock anime theme typography styling */
   h1 {
     @apply text-4xl md:text-5xl lg:text-6xl font-bold;
     letter-spacing: -0.02em;
+    text-shadow: 0 0 10px var(--bluelock-neon), 0 0 20px rgba(0, 238, 255, 0.5);
   }
   
   h2 {
     @apply text-3xl md:text-4xl font-bold;
     letter-spacing: -0.02em;
+    text-shadow: 0 0 8px var(--bluelock-blue);
   }
   
   h3 {
     @apply text-2xl md:text-3xl font-semibold;
     letter-spacing: -0.01em;
+    text-shadow: 0 0 5px var(--bluelock-blue);
   }
   
   p {
-    @apply font-sans leading-relaxed;
+    @apply leading-relaxed;
+    font-family: 'Rajdhani', sans-serif;
   }
   
   button, .button {
-    @apply font-display font-medium;
+    font-family: 'Orbitron', sans-serif;
+    @apply font-medium;
     letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+
+  /* Blue Lock anime-themed elements */
+  .blueLock-border {
+    border: 2px solid var(--bluelock-blue);
+    box-shadow: 0 0 10px var(--bluelock-blue), inset 0 0 5px var(--bluelock-blue);
+  }
+
+  .blueLock-glow {
+    text-shadow: 0 0 10px var(--bluelock-neon);
+    transition: text-shadow 0.3s ease;
+  }
+
+  .blueLock-glow:hover {
+    text-shadow: 0 0 15px var(--bluelock-neon), 0 0 30px var(--bluelock-neon);
+  }
+
+  /* Electric grid lines effect for sections */
+  .blueLock-grid {
+    background-image: 
+      linear-gradient(to right, rgba(0, 119, 255, 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 119, 255, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
   }
 }
