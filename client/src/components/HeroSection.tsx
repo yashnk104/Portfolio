@@ -108,7 +108,7 @@ export default function HeroSection() {
           >
             <img 
               className="mx-auto rounded-full border-4 border-white shadow-2xl w-48 h-48 md:w-64 md:h-64 object-cover transition-transform duration-300 hover:scale-105" 
-              src="https://images.unsplash.com/photo-1603575448360-153f093fd0b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&q=80" 
+              src="/yash_portrait.jpg" 
               alt="Yash Nikam - Portfolio" 
             />
             <div className="mt-6 bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
