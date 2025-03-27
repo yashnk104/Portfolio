@@ -14,7 +14,7 @@ export default function AboutSection() {
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">About Me</h2>
           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-            A passionate full-stack developer with a love for creating elegant solutions to complex problems.
+            A passionate full-stack developer and UI/UX designer with a love for creating elegant, user-centered digital experiences.
           </p>
         </motion.div>
 
@@ -28,31 +28,38 @@ export default function AboutSection() {
           >
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">My Journey</h3>
             <p className="text-lg text-gray-600 mb-6">
-              With over 5 years of experience in web and mobile development, I've had the privilege of working on a diverse range of projects that have shaped my technical skills and problem-solving approach.
+              With over 5 years of experience in both development and design, I've had the privilege of working on diverse projects that have shaped my technical and creative approach to digital products.
             </p>
             <p className="text-lg text-gray-600 mb-6">
-              I started my career as a frontend developer, focusing on creating intuitive user interfaces. As I grew professionally, I expanded my expertise to backend development, database design, and cloud infrastructure, becoming a versatile full-stack developer capable of building complete applications from the ground up.
+              I started my career as a UI/UX designer, focusing on creating intuitive and aesthetically pleasing interfaces. As I grew professionally, I expanded my expertise to include full-stack development, allowing me to both design and implement complete digital experiences from concept to deployment.
             </p>
             
             <div className="space-y-4 mb-8">
               <div className="flex items-start">
                 <Briefcase className="h-5 w-5 text-primary mr-3 mt-0.5" />
                 <div>
-                  <h4 className="font-medium text-gray-900">Senior Developer at TechInnovate</h4>
-                  <p className="text-sm text-gray-600">2020 - Present</p>
+                  <h4 className="font-medium text-gray-900">Lead UI/UX Designer & Developer at PixelPerfect</h4>
+                  <p className="text-sm text-gray-600">2022 - Present</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <Briefcase className="h-5 w-5 text-primary mr-3 mt-0.5" />
                 <div>
-                  <h4 className="font-medium text-gray-900">Full-stack Developer at WebSolutions</h4>
+                  <h4 className="font-medium text-gray-900">Senior Full-stack Developer at TechInnovate</h4>
+                  <p className="text-sm text-gray-600">2020 - 2022</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <Briefcase className="h-5 w-5 text-primary mr-3 mt-0.5" />
+                <div>
+                  <h4 className="font-medium text-gray-900">UI Designer at DesignWave</h4>
                   <p className="text-sm text-gray-600">2018 - 2020</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <GraduationCap className="h-5 w-5 text-primary mr-3 mt-0.5" />
                 <div>
-                  <h4 className="font-medium text-gray-900">BS in Computer Science</h4>
+                  <h4 className="font-medium text-gray-900">BS in Computer Science & Design</h4>
                   <p className="text-sm text-gray-600">Graduated 2018</p>
                 </div>
               </div>
@@ -60,20 +67,20 @@ export default function AboutSection() {
             
             <div className="grid grid-cols-2 gap-6 mt-8">
               <div className="text-center bg-white p-4 rounded-lg shadow-sm">
-                <p className="text-3xl font-bold text-primary">40+</p>
+                <p className="text-3xl font-bold text-primary">50+</p>
                 <p className="text-gray-600">Projects Completed</p>
               </div>
               <div className="text-center bg-white p-4 rounded-lg shadow-sm">
-                <p className="text-3xl font-bold text-primary">15+</p>
+                <p className="text-3xl font-bold text-primary">25+</p>
                 <p className="text-gray-600">Happy Clients</p>
               </div>
               <div className="text-center bg-white p-4 rounded-lg shadow-sm">
-                <p className="text-3xl font-bold text-primary">5+</p>
+                <p className="text-3xl font-bold text-primary">7+</p>
                 <p className="text-gray-600">Years Experience</p>
               </div>
               <div className="text-center bg-white p-4 rounded-lg shadow-sm">
-                <p className="text-3xl font-bold text-primary">12+</p>
-                <p className="text-gray-600">Tech Stacks</p>
+                <p className="text-3xl font-bold text-primary">15+</p>
+                <p className="text-gray-600">Design Systems</p>
               </div>
             </div>
           </motion.div>
@@ -87,25 +94,25 @@ export default function AboutSection() {
             <div className="bg-white rounded-xl shadow-xl overflow-hidden">
               <img 
                 className="w-full h-auto object-cover object-center" 
-                src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
-                alt="John Doe - Professional Portrait" 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                alt="Yash Nikam - Professional Portrait" 
               />
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">John Doe</h3>
-                <p className="text-gray-600 mb-4">Full-stack Developer & UI/UX Enthusiast</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Yash Nikam</h3>
+                <p className="text-gray-600 mb-4">Full-stack Developer & UI/UX Designer</p>
                 
                 <div className="space-y-3">
                   <div className="flex items-center">
                     <MapPin className="h-5 w-5 text-primary mr-2" />
-                    <span className="text-gray-600">San Francisco, CA</span>
+                    <span className="text-gray-600">Mumbai, India</span>
                   </div>
                   <div className="flex items-center">
                     <Mail className="h-5 w-5 text-primary mr-2" />
-                    <span className="text-gray-600">john.doe@example.com</span>
+                    <span className="text-gray-600">yash.nikam@example.com</span>
                   </div>
                   <div className="flex items-center">
                     <Calendar className="h-5 w-5 text-primary mr-2" />
-                    <span className="text-gray-600">Available for freelance from June 2023</span>
+                    <span className="text-gray-600">Available for freelance from April 2025</span>
                   </div>
                 </div>
                 
@@ -115,7 +122,7 @@ export default function AboutSection() {
                     Personal Interests
                   </h4>
                   <div className="flex flex-wrap gap-2">
-                    {["Photography", "Hiking", "Machine Learning", "Open Source", "Travel"].map((interest, i) => (
+                    {["UI/UX Design", "Web Development", "Mobile Apps", "Design Systems", "Minimalism"].map((interest, i) => (
                       <span 
                         key={i} 
                         className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
