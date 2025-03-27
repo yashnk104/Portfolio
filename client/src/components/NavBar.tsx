@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function NavBar() {
@@ -34,9 +34,9 @@ export default function NavBar() {
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold">JD</span>
+                <span className="text-primary-foreground font-bold">YN</span>
               </div>
-              <span className="text-xl font-bold text-gray-900">John Doe</span>
+              <span className="text-xl font-bold text-gray-900">Yash Nikam</span>
             </Link>
           </div>
           
@@ -46,6 +46,12 @@ export default function NavBar() {
             <a href="#skills" className="text-gray-600 hover:text-primary transition-colors py-2">Skills</a>
             <a href="#about" className="text-gray-600 hover:text-primary transition-colors py-2">About</a>
             <a href="#contact" className="text-gray-600 hover:text-primary transition-colors py-2">Contact</a>
+            <Button variant="outline" asChild className="flex items-center gap-1">
+              <a href="/Yash_Nikam_Resume.pdf" download>
+                <Download className="h-4 w-4" />
+                Resume
+              </a>
+            </Button>
             <Button asChild>
               <a href="#contact">Hire Me</a>
             </Button>
@@ -99,6 +105,15 @@ export default function NavBar() {
             onClick={closeMobileMenu}
           >
             Contact
+          </a>
+          <a 
+            href="/Yash_Nikam_Resume.pdf" 
+            download
+            className="flex items-center gap-2 px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+            onClick={closeMobileMenu}
+          >
+            <Download className="h-4 w-4" />
+            Download Resume
           </a>
           <a 
             href="#contact" 

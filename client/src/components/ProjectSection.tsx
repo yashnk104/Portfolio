@@ -4,58 +4,61 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "DesignSphere",
-    description: "A design system and component library showcasing UI/UX expertise. Built with React and TypeScript, this project demonstrates my ability to create consistent, accessible, and beautiful user interfaces.",
-    image: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    altText: "DesignSphere Design System",
-    tag: "UI/UX Design",
+    title: "CIBIL Score Predictor",
+    description: "An AI/ML-based model to predict CIBIL scores for unregistered small businesses, providing financial institutions with valuable insights for evaluating creditworthiness.",
+    image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    altText: "CIBIL Score Predictor for Small Businesses",
+    tag: "Machine Learning",
     technologies: [
-      "React", "TypeScript", "Storybook", "Figma", "Styled Components"
+      "Python", "scikit-learn", "Pandas", "React.js", "MongoDB"
     ],
     features: [
-      "Comprehensive design token system with theming support",
-      "Interactive component documentation and playground",
-      "Responsive layouts with mobile-first approach",
-      "Accessibility compliant with WCAG 2.1 AA standards"
+      "AI/ML algorithms to predict creditworthiness for unregistered businesses",
+      "Data preprocessing and feature engineering for accurate prediction",
+      "User-friendly React.js interface for inputting business financials",
+      "Secure data storage and management with MongoDB",
+      "Linear regression and random forest algorithms implementation"
     ],
-    demoLink: "https://designsphere.design",
-    codeLink: "https://github.com/yashnikam/designsphere"
+    demoLink: "https://cibilpredictor.app",
+    codeLink: "https://github.com/yashnikam/cibil-predictor"
   },
   {
-    title: "NexaCommerce",
-    description: "A full-featured e-commerce platform with a focus on exceptional user experience. This project showcases both my development skills and my eye for design with custom animations and intuitive user flows.",
-    image: "https://images.unsplash.com/photo-1607082349566-187342175e2f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    altText: "NexaCommerce E-commerce Platform",
-    tag: "Full-stack Project",
+    title: "Stock Price Predictor",
+    description: "A stock price prediction application leveraging LSTM neural networks and historical financial data to forecast market trends with impressive 85% accuracy.",
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    altText: "Stock Price Predictor Application",
+    tag: "Data Science",
     technologies: [
-      "React", "Node.js", "Express", "MongoDB", "Framer Motion"
+      "Python", "Streamlit", "LSTM Neural Networks", "Matplotlib", "Seaborn"
     ],
     features: [
-      "Custom animation system for delightful user interactions",
-      "Streamlined checkout process with high conversion rate",
-      "Responsive product visualization with 3D previews",
-      "User experience designed for maximum engagement"
+      "85% accuracy in forecasting short-term stock price trends",
+      "Real-time financial data integration from market APIs",
+      "Interactive data visualization with Matplotlib and Seaborn",
+      "Enhanced user engagement through intuitive interface design",
+      "Historical data analysis for pattern recognition"
     ],
-    demoLink: "https://nexacommerce.app",
-    codeLink: "https://github.com/yashnikam/nexacommerce"
+    demoLink: "https://stockpredictor.app",
+    codeLink: "https://github.com/yashnikam/stock-predictor"
   },
   {
-    title: "VisualDash",
-    description: "An interactive dashboard and data visualization tool that transforms complex datasets into intuitive visual representations. This project showcases my blend of technical skill and design thinking.",
+    title: "Graph Visualizer",
+    description: "An interactive graph algorithm visualization tool combining advanced data structures with a modern React.js frontend to deliver both educational value and powerful computational capabilities.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    altText: "VisualDash Dashboard",
+    altText: "Graph Algorithm Visualizer",
     tag: "Web Application",
     technologies: [
-      "React", "D3.js", "TypeScript", "Firebase", "Tailwind CSS"
+      "React.js", "Data Structures", "JavaScript", "CSS", "Dijkstra's Algorithm"
     ],
     features: [
-      "Interactive data visualizations with real-time updates",
-      "Customizable dashboard layouts with drag-and-drop functionality",
-      "Advanced filtering and data manipulation tools",
-      "Responsive design for desktop and tablet viewing"
+      "Optimized Dijkstra's algorithm with 1000+ nodes processing in under 100ms",
+      "Intuitive drag-and-drop interface for node placement and manipulation",
+      "Real-time graph updates and algorithm visualization",
+      "Responsive design compatible with various devices",
+      "Educational tool for understanding graph-based algorithms"
     ],
-    demoLink: "https://visualdash.app",
-    codeLink: "https://github.com/yashnikam/visualdash"
+    demoLink: "https://graphvisualizer.app",
+    codeLink: "https://github.com/yashnikam/graph-visualizer"
   }
 ];
 

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Code, Briefcase, Send } from "lucide-react";
+import { Code, Briefcase, Send, Download, FileText } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -35,7 +35,7 @@ export default function HeroSection() {
               </p>
             </motion.div>
             <motion.div 
-              className="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4"
+              className="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 flex-wrap"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -52,6 +52,25 @@ export default function HeroSection() {
                   Contact Me
                 </a>
               </Button>
+              <motion.div 
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-full sm:w-auto mt-3 sm:mt-0"
+              >
+                <Button 
+                  size="lg" 
+                  variant="default" 
+                  asChild 
+                  className="w-full relative overflow-hidden group bg-gradient-to-r from-white to-gray-300 text-black hover:from-gray-200 hover:to-white"
+                >
+                  <a href="/Yash_Nikam_Resume.pdf" download="Yash_Nikam_Resume.pdf">
+                    <FileText className="mr-2 h-5 w-5" />
+                    <span className="relative z-10">Download Resume</span>
+                    <span className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                    <Download className="ml-2 h-4 w-4 animate-bounce" />
+                  </a>
+                </Button>
+              </motion.div>
             </motion.div>
             <motion.div 
               className="mt-8 flex space-x-4 justify-center lg:justify-start"
@@ -89,7 +108,7 @@ export default function HeroSection() {
           >
             <img 
               className="mx-auto rounded-full border-4 border-white shadow-2xl w-48 h-48 md:w-64 md:h-64 object-cover transition-transform duration-300 hover:scale-105" 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&q=80" 
+              src="https://images.unsplash.com/photo-1603575448360-153f093fd0b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&q=80" 
               alt="Yash Nikam - Portfolio" 
             />
             <div className="mt-6 bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
