@@ -227,7 +227,7 @@ export default function AboutSection() {
               
               <img 
                 className="w-full h-auto object-cover object-center" 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                src="/yash_portrait.jpg" 
                 alt="Yash Nikam - Professional Portrait" 
               />
               <div className="p-6">
