@@ -64,7 +64,7 @@ export default function AboutSection() {
 
   const statsVariants = {
     hidden: { opacity: 0, scale: 0.8 },
-    visible: (i: number) => ({
+    visible: i => ({
       opacity: 1,
       scale: 1,
       transition: {
