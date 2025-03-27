@@ -1,19 +1,20 @@
-import { FaTwitter, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaGithub, FaInstagram, FaCode, FaDribbble } from "react-icons/fa";
+import { FileText } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white">
+    <footer className="bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <a href="#" className="flex items-center space-x-2">
-              <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-white font-bold">P</span>
+              <div className="h-8 w-8 rounded-full bg-gradient-to-r from-white to-gray-500 flex items-center justify-center">
+                <span className="text-black font-bold">Y</span>
               </div>
-              <span className="text-xl font-bold text-white">ProductName</span>
+              <span className="text-xl font-bold text-white">Yash Nikam</span>
             </a>
             <p className="mt-4 text-gray-300">
-              Transforming how teams work together with our all-in-one productivity platform.
+              Full-stack Developer & UI/UX Designer crafting beautiful, functional digital experiences that blend stunning design with powerful functionality.
             </p>
             <div className="mt-6 flex space-x-6">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -29,54 +30,28 @@ export default function Footer() {
                 <FaGithub className="text-lg" />
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <span className="sr-only">Instagram</span>
-                <FaInstagram className="text-lg" />
+                <span className="sr-only">Dribbble</span>
+                <FaDribbble className="text-lg" />
               </a>
             </div>
           </div>
           
           <div>
-            <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Product</h3>
+            <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Navigation</h3>
             <ul className="mt-4 space-y-4">
               <li>
-                <a href="#features" className="text-base text-gray-300 hover:text-white transition-colors">
-                  Features
+                <a href="#projects" className="text-base text-gray-300 hover:text-white transition-colors">
+                  Projects
                 </a>
               </li>
               <li>
-                <a href="#" className="text-base text-gray-300 hover:text-white transition-colors">
-                  Pricing
+                <a href="#skills" className="text-base text-gray-300 hover:text-white transition-colors">
+                  Skills
                 </a>
               </li>
-              <li>
-                <a href="#" className="text-base text-gray-300 hover:text-white transition-colors">
-                  Security
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-base text-gray-300 hover:text-white transition-colors">
-                  Roadmap
-                </a>
-              </li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Company</h3>
-            <ul className="mt-4 space-y-4">
               <li>
                 <a href="#about" className="text-base text-gray-300 hover:text-white transition-colors">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-base text-gray-300 hover:text-white transition-colors">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-base text-gray-300 hover:text-white transition-colors">
-                  Blog
+                  About Me
                 </a>
               </li>
               <li>
@@ -86,15 +61,32 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+          
+          <div>
+            <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Resources</h3>
+            <ul className="mt-4 space-y-4">
+              <li>
+                <a href="/Yash_Nikam_Resume.pdf" download="Yash_Nikam_Resume.pdf" className="text-base text-gray-300 hover:text-white transition-colors flex items-center">
+                  <FileText className="h-4 w-4 mr-2" />
+                  Resume
+                </a>
+              </li>
+              <li>
+                <a href="#skills" className="text-base text-gray-300 hover:text-white transition-colors flex items-center">
+                  <FaCode className="h-4 w-4 mr-2" />
+                  Tech Stack
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         
-        <div className="mt-12 pt-8 border-t border-gray-700 text-sm text-gray-400">
+        <div className="mt-12 pt-8 border-t border-gray-800 text-sm text-gray-400">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p>&copy; {new Date().getFullYear()} ProductName. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Yash Nikam. All rights reserved.</p>
             <div className="mt-4 md:mt-0 flex space-x-6">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
+              <span className="text-gray-500">Mumbai, India</span>
+              <span className="text-gray-500">yash.nikam@example.com</span>
             </div>
           </div>
         </div>
