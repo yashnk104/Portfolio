@@ -114,7 +114,7 @@ export default function HeroSection() {
             <div className="mt-6 bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
               <p className="text-lg font-medium">
                 <Code className="inline-block mr-2 h-5 w-5" />
-                <span>7+ years of experience in development & design</span>
+                <span>3+ years of experience in development & design</span>
               </p>
               <p className="mt-2 text-gray-300 text-sm">
                 Specializing in React, UI/UX Design, and full-stack applications

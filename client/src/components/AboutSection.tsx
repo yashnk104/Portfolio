@@ -116,7 +116,7 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.5 }}
             >
-              With over 7 years of experience in both development and design, I've had the privilege of working on diverse projects that have shaped my technical and creative approach to digital products.
+              With over 3 years of experience in both development and design, I've had the privilege of working on diverse projects that have shaped my technical and creative approach to digital products.
             </motion.p>
             
             <motion.p 
@@ -169,7 +169,7 @@ export default function AboutSection() {
               {[
                 { value: "50+", label: "Projects Completed" },
                 { value: "25+", label: "Happy Clients" },
-                { value: "7+", label: "Years Experience" },
+                { value: "3+", label: "Years Experience" },
                 { value: "15+", label: "Design Systems" }
               ].map((stat, i) => (
                 <motion.div 
