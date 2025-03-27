@@ -20,7 +20,7 @@ const projects = [
       "Linear regression and random forest algorithms implementation"
     ],
     demoLink: "https://cibilpredictor.app",
-    codeLink: "https://github.com/yashnikam/cibil-predictor"
+    codeLink: "https://github.com/yashnk104/Credit_score"
   },
   {
     title: "Stock Price Predictor",
@@ -218,7 +218,7 @@ export default function ProjectSection() {
                     <Button 
                       asChild 
                       variant="outline" 
-                      className="border-white text-white hover:bg-white/10"
+                      className="border-white bg-white text-black hover:bg-gray-200 hover:text-black"
                     >
                       <a href={project.codeLink} target="_blank" rel="noopener noreferrer">
                         <Github className="mr-2 h-4 w-4" />
@@ -289,7 +289,7 @@ export default function ProjectSection() {
                           asChild 
                           size="sm" 
                           variant="outline"
-                          className="border-white text-white hover:bg-white/10"
+                          className="border-white bg-white text-black hover:bg-gray-200 hover:text-black"
                         >
                           <a href={project.codeLink} target="_blank" rel="noopener noreferrer">
                             <Github className="mr-2 h-3 w-3" />
