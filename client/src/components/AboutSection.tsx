@@ -257,11 +257,11 @@ export default function AboutSection() {
                 >
                   <motion.div className="flex items-center" variants={itemVariants}>
                     <MapPin className="h-5 w-5 text-white mr-2" />
-                    <span className="text-gray-300">Mumbai, India</span>
+                    <span className="text-gray-300">Pune, Maharashtra</span>
                   </motion.div>
                   <motion.div className="flex items-center" variants={itemVariants}>
                     <Mail className="h-5 w-5 text-white mr-2" />
-                    <span className="text-gray-300">yash.nikam@example.com</span>
+                    <span className="text-gray-300">yash10nikam@gmail.com</span>
                   </motion.div>
                   <motion.div className="flex items-center" variants={itemVariants}>
                     <Calendar className="h-5 w-5 text-white mr-2" />

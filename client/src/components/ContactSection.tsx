@@ -41,12 +41,12 @@ const socialLinks = [
   { 
     icon: <FaGithub className="text-2xl" />, 
     name: "GitHub", 
-    url: "https://github.com/yash-nikam" 
+    url: "https://github.com/yashnk104" 
   },
   { 
     icon: <FaLinkedin className="text-2xl" />, 
     name: "LinkedIn", 
-    url: "https://linkedin.com/in/yash-nikam" 
+    url: "https://www.linkedin.com/in/yash-nikam-7866b6250" 
   },
   { 
     icon: <FaTwitter className="text-2xl" />, 
