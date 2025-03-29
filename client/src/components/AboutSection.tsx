@@ -116,7 +116,7 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.5 }}
             >
-              With over 3 years of experience in both development and design, I've had the privilege of working on diverse projects that have shaped my technical and creative approach to digital products.
+              As an Information Technology student with a passion for development and design, I've been actively involved in various projects that have helped me build my technical and creative skills in digital product development.
             </motion.p>
             
             <motion.p 
@@ -125,7 +125,7 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.5 }}
             >
-              I started my career as a UI/UX designer, focusing on creating intuitive and aesthetically pleasing interfaces. As I grew professionally, I expanded my expertise to include full-stack development, allowing me to both design and implement complete digital experiences from concept to deployment.
+              My journey began with UI/UX design at the Technical Board of AIT, where I learned to create intuitive and aesthetically pleasing interfaces. I've expanded my expertise to include full-stack development during my internship at Omiz Solutions, allowing me to both design and implement complete digital experiences from concept to deployment.
             </motion.p>
             
             <motion.div 
@@ -138,29 +138,22 @@ export default function AboutSection() {
               <motion.div className="flex items-start" variants={itemVariants}>
                 <Briefcase className="h-5 w-5 text-white mr-3 mt-0.5" />
                 <div>
-                  <h4 className="font-medium text-white">Lead UI/UX Designer & Developer at PixelPerfect</h4>
-                  <p className="text-sm text-gray-400">2022 - Present</p>
+                  <h4 className="font-medium text-white">Intern at Omiz Solutions Pvt Ltd</h4>
+                  <p className="text-sm text-gray-400">2024 - 2025</p>
                 </div>
               </motion.div>
               <motion.div className="flex items-start" variants={itemVariants}>
                 <Briefcase className="h-5 w-5 text-white mr-3 mt-0.5" />
                 <div>
-                  <h4 className="font-medium text-white">Senior Full-stack Developer at TechInnovate</h4>
-                  <p className="text-sm text-gray-400">2020 - 2022</p>
-                </div>
-              </motion.div>
-              <motion.div className="flex items-start" variants={itemVariants}>
-                <Briefcase className="h-5 w-5 text-white mr-3 mt-0.5" />
-                <div>
-                  <h4 className="font-medium text-white">UI Designer at DesignWave</h4>
-                  <p className="text-sm text-gray-400">2018 - 2020</p>
+                  <h4 className="font-medium text-white">UI UX Designer at Technical Board AIT</h4>
+                  <p className="text-sm text-gray-400">2023 - Present</p>
                 </div>
               </motion.div>
               <motion.div className="flex items-start" variants={itemVariants}>
                 <GraduationCap className="h-5 w-5 text-white mr-3 mt-0.5" />
                 <div>
-                  <h4 className="font-medium text-white">BS in Computer Science & Design</h4>
-                  <p className="text-sm text-gray-400">Graduated 2018</p>
+                  <h4 className="font-medium text-white">BE in Information Technology</h4>
+                  <p className="text-sm text-gray-400">Graduation in 2026</p>
                 </div>
               </motion.div>
             </motion.div>
