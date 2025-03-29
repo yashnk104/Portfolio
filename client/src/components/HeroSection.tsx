@@ -358,7 +358,7 @@ export default function HeroSection() {
               />
               
               <img 
-                className="relative z-10 mx-auto rounded-full border-4 border-white shadow-2xl w-full h-full object-cover" 
+                className="relative z-10 mx-auto rounded-full border-4 border-white shadow-2xl w-full h-full object-cover object-center scale-125" 
                 src="/yash_portrait.jpg" 
                 alt="Yash Nikam - Portfolio" 
               />
