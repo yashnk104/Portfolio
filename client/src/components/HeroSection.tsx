@@ -139,21 +139,6 @@ export default function HeroSection() {
               animate="visible"
             >
               Hi, I'm <span className="text-gradient">Yash</span> <span className="text-gray-300">Nikam</span>
-              <motion.span 
-                className="inline-block ml-1"
-                animate={{ 
-                  rotate: [0, 10, 0, 10, 0],
-                }}
-                transition={{ 
-                  duration: 1.5, 
-                  repeat: Infinity,
-                  repeatType: "loop",
-                  ease: "easeInOut",
-                  repeatDelay: 2
-                }}
-              >
-                👋
-              </motion.span>
             </motion.h1>
             <motion.div 
               className="mt-6"
