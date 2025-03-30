@@ -4,7 +4,7 @@ import { Progress } from "@/components/ui/progress";
 
 const skills = [
   {
-    icon: <Code className="text-primary mr-3 h-5 w-5" />,
+    icon: <Code className="h-5 w-5" />,
     title: "Development",
     skills: [
       { name: "Frontend Architecture", value: 95 },
@@ -13,7 +13,7 @@ const skills = [
     ]
   },
   {
-    icon: <Paintbrush className="text-primary mr-3 h-5 w-5" />,
+    icon: <Paintbrush className="h-5 w-5" />,
     title: "Design",
     skills: [
       { name: "UI/UX Design", value: 98 },
@@ -22,7 +22,7 @@ const skills = [
     ]
   },
   {
-    icon: <Shield className="text-primary mr-3 h-5 w-5" />,
+    icon: <Shield className="h-5 w-5" />,
     title: "Security",
     skills: [
       { name: "Data Protection", value: 96 },
@@ -31,7 +31,7 @@ const skills = [
     ]
   },
   {
-    icon: <PieChart className="text-primary mr-3 h-5 w-5" />,
+    icon: <PieChart className="h-5 w-5" />,
     title: "Analytics",
     skills: [
       { name: "Data Visualization", value: 92 },
@@ -40,7 +40,7 @@ const skills = [
     ]
   },
   {
-    icon: <Cloud className="text-primary mr-3 h-5 w-5" />,
+    icon: <Cloud className="h-5 w-5" />,
     title: "Infrastructure",
     skills: [
       { name: "Cloud Architecture", value: 94 },
@@ -49,7 +49,7 @@ const skills = [
     ]
   },
   {
-    icon: <Users className="text-primary mr-3 h-5 w-5" />,
+    icon: <Users className="h-5 w-5" />,
     title: "Customer Success",
     skills: [
       { name: "Onboarding", value: 97 },
@@ -70,9 +70,11 @@ export default function SkillSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Skills & Expertise</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Skills & Expertise</span>
+          </h2>
           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-            Our product is built by industry experts with decades of combined experience.
+            My technical toolkit and areas of expertise that I bring to every project.
           </p>
         </motion.div>
         
@@ -80,16 +82,31 @@ export default function SkillSection() {
           {skills.map((category, index) => (
             <motion.div 
               key={index}
-              className="bg-gray-50 rounded-lg p-6 shadow-sm hover:shadow-md transition-all"
+              className="bg-gray-50 rounded-lg p-6 shadow-sm transition-all duration-300"
+              whileHover={{ 
+                scale: 1.05, 
+                boxShadow: "0 10px 30px rgba(0, 0, 0, 0.1)",
+                y: -5
+              }}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                {category.icon}
+              <motion.h3 
+                className="text-xl font-bold text-gray-900 mb-4 flex items-center"
+                whileHover={{ scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
+                <motion.span 
+                  className="text-blue-500 flex items-center mr-2"
+                  whileHover={{ rotate: [0, -10, 10, -10, 0] }}
+                  transition={{ duration: 0.5 }}
+                >
+                  {category.icon}
+                </motion.span>
                 {category.title}
-              </h3>
+              </motion.h3>
               <div className="space-y-4">
                 {category.skills.map((skill, i) => (
                   <div key={i}>
@@ -97,7 +114,19 @@ export default function SkillSection() {
                       <span className="text-sm font-medium text-gray-700">{skill.name}</span>
                       <span className="text-sm font-medium text-gray-700">{skill.value}%</span>
                     </div>
-                    <Progress value={skill.value} className="h-2" />
+                    <motion.div
+                      className="relative h-2 w-full bg-gray-200 rounded-full overflow-hidden"
+                      initial={{ opacity: 0.7 }}
+                      whileInView={{ opacity: 1 }}
+                      transition={{ duration: 0.5 }}
+                    >
+                      <motion.div
+                        className="absolute top-0 left-0 h-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full"
+                        initial={{ width: "0%" }}
+                        whileInView={{ width: `${skill.value}%` }}
+                        transition={{ duration: 1, delay: 0.3 + i * 0.1 }}
+                      />
+                    </motion.div>
                   </div>
                 ))}
               </div>
