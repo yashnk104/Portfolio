@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { CheckCircle2, Github, ExternalLink, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useQuery } from "@tanstack/react-query";
 import { Project } from "@shared/schema";
+import { projects } from "@/data/staticData";
 
 // Fallback placeholder for when projects are loading or if there's an error
 const ProjectPlaceholder = () => (
@@ -16,18 +16,10 @@ const ProjectPlaceholder = () => (
 );
 
 export default function ProjectSection() {
-  // Fetch projects from the API
-  const { data, isLoading, error } = useQuery({
-    queryKey: ["/api/projects"],
-    queryFn: async () => {
-      const response = await fetch("/api/projects");
-      if (!response.ok) {
-        throw new Error("Failed to fetch projects");
-      }
-      const data = await response.json();
-      return data.projects as Project[];
-    }
-  });
+  // For static build, we directly use the imported projects data
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<Error | null>(null);
+  const data = projects;
 
   // Animation variants for staggered animations
   const containerVariants = {

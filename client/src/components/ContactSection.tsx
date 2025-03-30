@@ -12,6 +12,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
+import { submitContactForm } from "@/data/staticData";
 
 const contactInfo = [
   {
@@ -91,14 +92,25 @@ export default function ContactSection() {
   
   const onSubmit = async (data: any) => {
     setIsSubmitting(true);
-    // This would normally send the data to a server
-    console.log("Form submitted:", data);
     
-    // Simulate API call delay
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
+    try {
+      // Use static function for GitHub Pages deployment
+      await submitContactForm({
+        name: data.name,
+        email: data.email,
+        subject: data.subject,
+        message: data.message
+      });
+      
+      // Simulate API call delay
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      setIsSubmitted(true);
+    } catch (error) {
+      console.error("Error submitting contact form:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
   
   return (

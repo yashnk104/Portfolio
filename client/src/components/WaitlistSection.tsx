@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { apiRequest } from "@/lib/queryClient";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -14,6 +13,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { submitWaitlistEntry } from "@/data/staticData";
 
 const waitlistSchema = z.object({
   email: z.string().email({
@@ -38,8 +38,8 @@ export default function WaitlistSection() {
     setIsSubmitting(true);
     
     try {
-      const response = await apiRequest("POST", "/api/waitlist", values);
-      const data = await response.json();
+      // Use the static function for GitHub Pages deployment
+      const result = await submitWaitlistEntry(values.email, "");
       
       toast({
         title: "Success!",
@@ -49,17 +49,9 @@ export default function WaitlistSection() {
       
       form.reset();
     } catch (error) {
-      let message = "Failed to join waitlist. Please try again.";
-      
-      if (error instanceof Error) {
-        if (error.message.includes("409")) {
-          message = "This email is already on our waitlist.";
-        }
-      }
-      
       toast({
         title: "Error",
-        description: message,
+        description: "Failed to join waitlist. Please try again.",
         variant: "destructive",
       });
     } finally {
