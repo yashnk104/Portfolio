@@ -93,23 +93,87 @@ export default function FeatureSection() {
           {technologies.map((tech, index) => (
             <motion.div 
               key={index}
-              className="bg-gray-50 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300"
+              className="bg-gray-50 rounded-xl p-8 shadow-sm transition-all duration-300"
               variants={itemVariants}
+              whileHover={{ 
+                scale: 1.05, 
+                boxShadow: "0 10px 30px rgba(0, 0, 0, 0.1)",
+                y: -5
+              }}
             >
-              <div className="h-12 w-12 rounded-md bg-primary text-white flex items-center justify-center mb-5">
-                {tech.icon}
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">{tech.title}</h3>
+              <motion.div 
+                className="h-12 w-12 rounded-md bg-primary text-white flex items-center justify-center mb-5 relative overflow-hidden"
+                whileHover={{ 
+                  scale: 1.1,
+                  boxShadow: "0 0 15px rgba(79, 70, 229, 0.5)"
+                }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-blue-500 opacity-0"
+                  whileHover={{ opacity: 1 }}
+                  transition={{ duration: 0.3 }}
+                />
+                <motion.div 
+                  className="relative z-10"
+                  whileHover={{ rotate: [0, -10, 10, -10, 0] }}
+                  transition={{ duration: 0.5 }}
+                >
+                  {tech.icon}
+                </motion.div>
+              </motion.div>
+              <motion.h3 
+                className="text-xl font-semibold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-700"
+                initial={{ backgroundPosition: "0% 50%" }}
+                whileHover={{ 
+                  backgroundPosition: "100% 50%",
+                  backgroundImage: "linear-gradient(90deg, #4338ca, #3b82f6)"
+                }}
+                transition={{ duration: 0.5 }}
+              >
+                {tech.title}
+              </motion.h3>
               <p className="text-gray-600 mb-4">{tech.description}</p>
               <div className="flex flex-wrap gap-2">
-                {tech.items.map((item, i) => (
-                  <span 
-                    key={i} 
-                    className="px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full"
-                  >
-                    {item}
-                  </span>
-                ))}
+                {tech.items.map((item, i) => {
+                  const variants = {
+                    hidden: { opacity: 0, y: 10 },
+                    visible: { 
+                      opacity: 1, 
+                      y: 0,
+                      transition: { 
+                        type: "spring", 
+                        stiffness: 400, 
+                        damping: 10,
+                        delay: 0.2 + (i * 0.1) 
+                      }
+                    },
+                    hover: {
+                      scale: 1.08,
+                      backgroundColor: "rgba(79, 70, 229, 0.2)",
+                      boxShadow: "0 0 8px rgba(79, 70, 229, 0.3)",
+                      transition: { 
+                        type: "spring", 
+                        stiffness: 400, 
+                        damping: 10 
+                      }
+                    }
+                  };
+                  
+                  return (
+                    <motion.span 
+                      key={i} 
+                      className="px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full"
+                      variants={variants}
+                      initial="hidden"
+                      whileInView="visible"
+                      whileHover="hover"
+                      viewport={{ once: true }}
+                    >
+                      {item}
+                    </motion.span>
+                  );
+                })}
               </div>
             </motion.div>
           ))}
